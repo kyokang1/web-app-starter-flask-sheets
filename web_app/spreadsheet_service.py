@@ -19,7 +19,7 @@ load_dotenv()
 DOCUMENT_KEY = os.environ.get("GOOGLE_SHEET_ID", "OOPS Please get the spreadsheet identifier from its URL")
 SHEET_NAME = "Products"
 
-CREDENTIALS_FILEPATH = os.path.join(os.path.dirname(__file__), ".", "auth", "google_api_credentials.json")
+CREDENTIALS_FILEPATH = os.path.join(os.path.dirname(__file__), "..", "auth", "google_api_credentials.json")
 GOOGLE_API_CREDENTIALS = os.environ.get("GOOGLE_API_CREDENTIALS")
 
 AUTH_SCOPE = [
